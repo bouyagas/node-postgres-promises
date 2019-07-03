@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "bluebird": "^3.4.7",
@@ -14,6 +16,8 @@
     "morgan": "^1.6.1",
     "pg-promise": "^5.6.4",
     "pug": "^2.0.0-beta11",
-    "serve-favicon": "^2.3.2"
-  }
+    "serve-favicon": "^2.3.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
